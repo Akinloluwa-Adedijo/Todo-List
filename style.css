@@ -1,0 +1,90 @@
+* {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+body {
+  background-color: #0c2231;
+  color: #f7f1f8;
+  margin: 10px;
+  padding: 10px;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+#addTodo {
+  background-color: #f7f1f8;
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #0c2231;
+  margin: 10px;
+  font-size: 1.25rem;
+  word-wrap: break-word;
+  text-align: left;
+  padding-left: 20px;
+}
+
+#addTodo[type="text"] {
+  color: #0c2231;
+  box-shadow: none;
+}
+
+#addTodo[type="text"]:focus {
+  outline: none;
+}
+#addTodo::placeholder {
+  color: #0c2231;
+  opacity: 50%;
+}
+@media (max-width: 600px) {
+  #addTodo {
+    width: 250px;
+    font-size: 90%;
+  }
+}
+
+.todoContainer {
+  width: 500px;
+  border: 1px dotted #fbdbc1;
+  margin: auto;
+  padding: 10px;
+}
+
+.todos li {
+  width: 400px;
+  height: 50px;
+  background-color: #f7f1f8;
+  color: #0c2231;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todos li div {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.todos li div.complete {
+  opacity: 50%;
+  text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+  margin-left: 15px;
+  appearance: none;
+  background-color: transparent;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #0c2231;
+  border-radius: 100%;
+}
