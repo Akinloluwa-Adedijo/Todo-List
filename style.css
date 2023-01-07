@@ -16,7 +16,23 @@ h1 {
 h2 {
   font-weight: 500;
 }
-
+.addTodoButton {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #0c2231;
+  font-size: 1.25rem;
+  background-color: #f7f1f8;
+  color: #0c2231;
+  cursor: pointer;
+}
+.removeTodoButton {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  border-radius: 100%;
+  place-content: center;
+  cursor: pointer;
+}
 #addTodo {
   background-color: #f7f1f8;
   width: 500px;
@@ -51,7 +67,7 @@ h2 {
 
 .todoContainer {
   width: 500px;
-  border: 1px dotted #fbdbc1;
+  border: 1px solid #fbdbc1;
   margin: auto;
   padding: 10px;
 }
@@ -72,6 +88,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  padding-left: 0.75rem;
 }
 
 .todos li div.complete {
@@ -79,12 +96,11 @@ h2 {
   text-decoration: line-through;
 }
 
-input[type="checkbox"] {
-  margin-left: 15px;
-  appearance: none;
-  background-color: transparent;
-  width: 1.5rem;
-  height: 1.5rem;
-  border: 2px solid #0c2231;
-  border-radius: 100%;
+svg {
+  color: #0c2231;
+  cursor: pointer;
+}
+
+svg.complete {
+  opacity: 50%;
 }
